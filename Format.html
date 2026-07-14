@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form </title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-box {
+            width: 550px;
+            margin: 0 auto;
+            padding: 25px;
+            border: 1px solid #999;
+            box-sizing: border-box;
+        }
+        .intro {
+            margin-bottom: 20px;
+        }
+        p {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        label {
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        input[type="text"], input[type="tel"], input[type="email"] {
+            flex: 1;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+        .note {
+            text-align: center;
+            display: block;
+            margin: 15px 0;
+        }
+        .submit-row {
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Details</h1>
+
+    <form action="#" method="post">
+        <div class="form-box">
+            <p class="intro">Please enter your personal details:</p>
+
+            <p>
+                <label for="fname">First name*:</label>
+                <input type="text" id="fname" name="fname" required>
+            </p>
+
+            <p>
+                <label for="lname">Last name*:</label>
+                <input type="text" id="lname" name="lname" required>
+            </p>
+
+            <p>
+                <label for="address">Street address:</label>
+                <input type="text" id="address" name="address">
+            </p>
+
+            <p>
+                <label for="city">Town/city:</label>
+                <input type="text" id="city" name="city">
+            </p>
+
+            <p>
+                <label for="zip">Postcode/zip:</label>
+                <input type="text" id="zip" name="zip">
+            </p>
+
+            <p>
+                <label for="phone">Telephone:</label>
+                <input type="tel" id="phone" name="phone">
+            </p>
+
+            <p>
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile">
+            </p>
+
+            <p>
+                <label for="email">Email address*:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p class="note">Fields marked * are required.</p>
+
+            <p class="submit-row">
+                <button type="submit">Submit</button>
+            </p>
+        </div>
+    </form>
+</body>
+</html>
